@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+<style>
+    .outer {
+        display: flex;
+        background-color: aqua;
+        height: 100px;
+    }
+    .outer>div:nth-child(odd) {
+        background-color: green;
+    }
+    .outer>div:nth-child(even) {
+        background-color: yellow;
+    }
+</style>
+</head>
+<body>
+    <div class="outer">
+        <div>
+            first
+        </div>
+        <div>
+            second
+        </div>
+        <div>
+            third
+        </div>
+    </div>
+</body>
+</html>
