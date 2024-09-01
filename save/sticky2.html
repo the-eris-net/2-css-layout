@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Position Example</title>
+<style>
+    .container {
+        height: 800px;
+        background-color: skyblue;
+        overflow: scroll;
+    }
+    .header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px;
+        font-size: 1.5rem;
+        position: sticky;
+        top: 0;
+    }
+    .content {
+        height: 1500px;
+        padding: 15px;
+        color: white;
+        background-color: grey;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            고정 헤더1
+        </div>
+        <div class="content">
+            <p>컨텐츠1</p>
+            <p>컨텐츠2</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            고정 헤더2
+        </div>
+        <div class="content">
+            <p>컨텐츠3</p>
+            <p>컨텐츠4</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Above Child</title>
+    <style>
+        .parent {
+            position: relative;
+            z-index: 10;
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+        }
+
+        .child {
+            position: relative;
+            z-index: -1;
+            width: 150px;
+            height: 150px;
+            background-color: coral;
+            top: -50px;
+            left: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        부모 요소
+        <div class="child">자식 요소</div>
+    </div>
+</body>
+</html>

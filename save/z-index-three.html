@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+<style>
+.common {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.first {
+    background-color: aqua;
+    position: relative;
+}
+.first-first {
+    background-color: aquamarine;
+    top: 50px;
+    left: 50px;
+}
+.second {
+    background-color: yellow;
+    position: relative;
+}
+.second-first {
+        background-color: yellowgreen;
+        top: -25px;
+        left: -25px;
+    }
+.third {
+    background-color: salmon;
+    position: relative;
+}
+.third-first {
+    background-color: pink;
+    top: -35px;
+    left: 65px;
+}
+.third-first-first {
+    background-color: crimson;
+    top: -30px;
+    left: 50px;
+}
+</style>
+</head>
+<body>
+    <div class="first common">1
+        <div class="first-first common" style="z-index: 1;">1-1</div>
+    </div>
+    <div class="second common">2
+        <div class="second-first common" style="z-index: -1;">2-1</div>
+    </div>
+    <div class="third common">3
+        <div class="third-first common">3-1
+            <div class="third-first-first common">3-1-1</div>
+        </div>
+    </div>
+</body>
+</html>

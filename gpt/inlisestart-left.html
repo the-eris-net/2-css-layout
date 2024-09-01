@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- <html lang="en" dir="ltr"> -->
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Float Example</title>
+    <style>
+        .box-left {
+            float: left;
+            width: 150px;
+            height: 100px;
+            background-color: lightblue;
+        }
+
+        .box-inline-start {
+            float: inline-start;
+            width: 150px;
+            height: 100px;
+            background-color: lightcoral;
+        }
+
+        .content {
+            background-color: lightgray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-left">Float Left</div>
+    <div class="content">This text will wrap around the box floated to the left</div>
+    <br style="clear: both;">
+    <div class="box-inline-start">Float Inline-Start</div>
+    <div class="content">This text will wrap around the box floated to the inline start.</div>
+</body>
+</html>
